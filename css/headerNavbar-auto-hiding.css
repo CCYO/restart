@@ -1,0 +1,10 @@
+/*navbar 自動隱藏/出現*/
+.fixed-top {
+  transition:transform 300ms linear;
+}
+.is-hidden {
+    transform:translateY(-100%)
+}
+.is-show {
+    transform:translateY(0%)
+}

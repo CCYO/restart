@@ -1,0 +1,355 @@
+﻿section h1 {
+  color: #D69035;
+  margin-bottom: 1rem;
+}
+
+/*header*/
+/*navbar*/
+.navbar-brand {
+  color: #FFF;
+  padding: 0.7rem 1rem;
+}
+.navbar-brand:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #FFF;
+}
+header .navbar {
+  padding: 0.5rem;
+  background-image: linear-gradient;
+}
+header .nav-link {
+  padding: 1rem 1rem;
+}
+header .nav-link {
+  color: rgba(255, 255, 255, 0.6)
+}
+header .nav-link:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #FFF;
+}
+header .nav-link.active:not(.dropdown-toggle) {
+  color: #FFF;   
+  cursor: default;
+  pointer-events: none;
+}
+
+button.navbar-toggler {
+  color: #fff;  
+  padding: 1rem 1rem;
+  outline: none;
+}
+
+/*收束navbar*/
+.navbar-toggler:active {
+  color: #fff;
+  transform: rotate(180deg);
+  transition: all 0.3s ease;
+}
+/*收束navbar 結束*/
+
+a.nav-link.a-active {
+  color: #FFF;
+  cursor: default;
+  pointer-events: none;
+}
+
+/*下拉選單*/
+a.dropdown-toggle.active {
+  color: #FFF;   
+  cursor: default;
+}
+
+.dropdown-item.active {
+  background: rgba(255, 255, 255, 0.2);
+  color: #FFCC8B;
+  cursor: default;
+  pointer-events: none;
+}
+
+.dropdown-menu {
+  background-color: #35b14e;
+}
+.dropdown-item {
+  color: #fff;
+}
+.dropdown-item:focus,
+.dropdown-item:hover {
+  background-color: #9fd4a0;
+  color: #28a745;
+}
+/*下拉選單 結束*/
+
+/*header 結束*/
+
+
+/*網頁內容*/
+main {
+  /*避免被navbar蓋到*/
+  position: relative;
+  top: 1.4rem;
+  /*上下留白*/
+}
+
+
+/*輪播內容 說明文字*/
+.carousel-caption {
+  background: rgba(255, 255, 240, 0.6);
+  color: #4B4C4C;
+  padding: 1rem;
+}
+
+/*輪播背景設定*/
+.carousel-item {
+  background-position: center center;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+/*輪播背景圖-專案活動*/
+.carousel-item:nth-child(1) {
+  background-image: url("https://images.zi.org.tw/jatraveling/2019/03/13154842/1552463322-ca1a880dda4f01e596875bba80333727.jpg");
+}
+
+/*輪播背景圖-花園婚禮*/
+.carousel-item:nth-child(2) {
+  background-image: url("https://www.r-man.tw/wp-content/uploads/american-wedding-0004.jpg");
+}
+
+/*輪播背景圖-園藝花園*/
+.carousel-item:nth-child(3) {
+  background-image: url("https://farm8.static.flickr.com/7342/10906736175_11ec91558b_b.jpg");
+}
+
+/*輪播背景圖-童趣花園*/
+.carousel-item:nth-child(4) {
+  background-image: url("http://www.gardenmall.com.tw/gardenmall/2019/20190622/e1.jpg");
+}
+
+/*台北的秘密角落示圖*/
+.garden-intro .intro-pic {
+  background-image: url('https://s3-media0.fl.yelpcdn.com/bphoto/8D-_L55hrlWEkgzP9rxoMA/o.jpg');
+  background-position: center center;
+  background-size: 100% 100%;
+  height: 270px;
+}
+.garden-intro .intro-pic-xs {
+  border-radius: 50%;
+}
+
+/*花園活動*/
+.garden-activity img{
+  height: 150px;
+}
+
+/*花園挖寶*/
+
+.card-body h5 {
+  color: #D69035;
+}
+
+/*會館資訊*/
+
+/*cut*/
+.cut {
+  background: #fff;
+  padding-top: 3rem;
+}
+.cut .cc{
+  width: 80px;
+  height: 40px;
+  border-radius: 40px 40px 0 0;
+  background: rgba(255, 185,208, .5);
+}
+
+/*cut 結束*/
+
+.hall-intro {
+  background: rgba(255, 185,208, .5);
+  padding-bottom: 8rem;
+}
+
+/*鑽戒icon*/
+.hall-intro .icon {
+  border: 5px solid #ffb9d0;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  top: -75px;
+  left: 50%;
+  margin-left: -75px;
+}
+
+/*內文背景圖片*/
+.hall-intro .intro-pic {
+  background: url("https://pic.pimg.tw/taipeigardenmall/1577670283-4042012710_n.jpg") center top/100% auto scroll no-repeat
+}
+
+/*會館介紹 文字說明框*/
+.hall-intro h2{
+  padding-top: 3rem; 
+  padding-bottom: 5rem; 
+  color: #f156f8;
+}
+
+/*內文上下留空*/
+.hall-intro .col-md-8 {
+  font-size: 1.25rem;
+  padding-top: 6rem;
+  padding-bottom: 5rem;
+}
+/*內文左右{}*/
+.hall-intro .col-md-2 {
+  font-size: 20rem;
+}
+
+
+/*會館介紹 文字說明框*/
+.hall-intro .txt-bg {
+  color: #FF5D6F;
+  text-shadow: rgb(200, 200, 200) 2px 2px 2px;
+  background: rgba(255, 255, 255 ,.6);
+  box-shadow: #fff 0px 0px 8px;
+}
+
+/*內文浮動圖標*/
+.anim {
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+.fa-glass-cheers {
+  color: #FF5D6F;
+  top: 5rem;
+  left: 3rem;
+}
+
+.fa-guitar {
+  color: #b29700;
+  top: 10rem;
+  right: 1rem;
+}
+
+.fa-music {
+  color: #f6f003;
+  left: 4rem;
+  bottom: 7rem;
+}
+
+.fa-ring {
+  color: #f156f8;
+  right: 4rem;
+  bottom: 7rem;
+}
+
+
+/*Footer*/
+footer {
+  background: #006737;
+  color: #FFF;
+  padding: 2rem 0.5rem;
+  position: relative;
+  top: 1.4rem;
+}
+
+footer .col-md-6 {
+  margin-bottom: 1rem;
+}
+
+footer p {
+  line-height: 2;
+  margin: 0;
+}
+
+/*FOOTER 店家營頁資訊*/
+footer .nav {
+  justify-content: center;
+}
+
+footer .nav-tabs .nav-link:active {
+  background: rgba(255,255,255,.9);
+  color: #D69035;
+}
+
+footer .nav-tabs .nav-link:hover {
+  background: rgba(255,255,255,.5);
+  color: #FFF;
+}
+
+footer .nav-tabs .nav-link {
+  color: rgba(255,255,255,.9);
+}
+
+footer .nav-tabs .nav-link.active {
+  background: rgba(255,255,255,.9);
+  color: #D69035;
+}
+
+/*FOOTER 店家營業資訊內容*/
+.tab-content {
+  padding-top: 1rem; 
+}
+
+
+/*map*/
+.map-box {
+  background: #D69035;
+  padding: 0.5rem;
+}
+
+.map {
+  display: block;
+  width: 100%;
+  height: 50vh;
+}
+
+/*FOOTER 結束*/
+@media (max-width: 575.98px){
+  .hall-intro .intro-pic {
+    background-size: cover;
+    background-position: center center;
+  }  
+}
+
+@media (max-width: 767.98px){
+  /*header navbar*/
+  header .navbar-nav {
+    padding: 0 1rem;
+  }
+  header .nav-link{
+    line-height: 1.5;
+    padding: 0.5rem 0;
+  }
+  
+  /*避免橫向照片在畫面太窄時變扁→高度100%,寬度RWD*/
+  /*輪撥圖*/
+  .carousel-item {
+    background-size: auto 100%; 
+  } 
+  .garden-intro .intro-pic {
+    width: 16rem;
+    height: 16rem;
+  }
+  
+  /*花園挖寶 介紹卡的圖*/
+  .garden-activity img {
+    height: 300px;
+  }
+  
+  /*FOOTER 營業時間資訊*/
+  footer .tab-content {
+    height: 45vh;
+  }
+}
+
+@media (min-width: 992px){
+  /*台北的秘密角落示圖*/
+  .garden-intro .intro-pic {
+    padding: 0;
+    height: 400px;
+  }
+  /*garden-activity 介紹卡的圖*/
+  .garden-activity img {
+    height: 215px;
+  }
+}
+

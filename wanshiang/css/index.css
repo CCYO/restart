@@ -1,0 +1,254 @@
+﻿body {
+  padding-top: 3rem;
+}
+
+/*header*/
+/*navbar*/
+.navbar-brand {
+  color: #FFF;
+  padding: 0.7rem 1rem;
+}
+.navbar-brand:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #FFF;
+}
+header .navbar {
+  padding: 0.5rem;
+}
+header .nav-link {
+  padding: 1rem 1rem;
+}
+header .nav-link {
+  color: rgba(255, 255, 255, 0.6)
+}
+header .nav-link:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #FFF;
+}
+
+header .nav-link.active:not(.dropdown-toggle) {
+  color: #FFF;   
+  cursor: default;
+  pointer-events: none;
+}
+
+button.navbar-toggler {
+  color: #fff;  
+  padding: 1rem 1rem;
+  outline: none;
+}
+
+/*收束navbar*/
+.navbar-toggler:active {
+  color: #fff;
+  transform: rotate(180deg);
+  transition: all 0.3s ease;
+}
+/*收束navbar 結束*/
+
+a.nav-link.a-active {
+  color: #FFF;
+}
+
+/*下拉選單*/
+a.dropdown-toggle.active {
+  color: #FFF;   
+  cursor: default;
+}
+.dropdown-item.active {
+  color: #FFCC8B;
+  cursor: default;
+  pointer-events: none;
+  background: rgba(255, 255, 255, 0.2);
+}
+.dropdown-menu {
+  background-color: #35b14e;
+}
+.dropdown-item {
+  color: #fff;
+}
+.dropdown-item:focus,
+.dropdown-item:hover {
+  background-color: #9fd4a0;
+  color: #28a745;
+}
+/*下拉選單 結束*/
+
+/*header 結束*/
+
+
+/*網頁內容*/
+main {
+  /*避免被navbar蓋到*/
+  position: relative;
+  top: 1.4rem;
+  /*上下留白*/
+  padding: 2rem;
+  /*蓋色底圖背景*/
+  background-image: linear-gradient(to right, rgba(242, 124, 18, .3), rgba(242, 124, 18, .3)),url("https://www.toptal.com/designers/subtlepatterns/patterns/palm-leaf.png") ;
+}
+
+/*網頁內容nav*/
+main .nav {
+  padding-bottom: 1rem; 
+}
+
+main .nav-link:active {
+  color: #D69035;
+}
+
+main .nav-link:hover {
+  color: #249461;
+  background: rgba(36, 148, 97, 0.1);
+  border-top: 2px solid #249461;
+  border-bottom: 2px solid #249461;
+}
+
+main .nav-link.active {
+  color: #FFF;
+  background: #249461;
+  border-top: 2px solid #249461;
+  border-bottom: 2px solid #249461;
+}
+
+main .nav-link {
+  color: #006738;
+  border-top: 2px solid rgba(255,255,255,.6);
+  border-bottom: 2px solid  rgba(255,255,255,.6);
+  
+  transition: all 0.3s ease;
+}
+
+/*網頁內容nav 結束*/
+
+
+
+.store-photo {
+  background: url("https://pic.pimg.tw/taipeigardenmall/1499334906-1821075545_n.jpg") center center / auto 100% no-repeat;
+}
+
+/*網頁內容結束*/
+
+/*Footer*/
+footer {
+  background: #006737;
+  color: #FFF;
+  padding: 2rem 0.5rem;
+  position: relative;
+  top: 1.4rem;
+}
+
+footer .col-md-6 {
+  margin-bottom: 1rem;
+}
+
+footer p {
+  line-height: 2;
+  margin: 0;
+}
+
+/*FOOTER 店家營頁資訊*/
+footer .nav-tabs .nav-link:active {
+  background: rgba(255,255,255,.9);
+  color: #D69035;
+}
+
+footer .nav-tabs .nav-link:hover {
+  background: rgba(255,255,255,.5);
+  color: #FFF;
+}
+
+footer .nav-tabs .nav-link {
+  color: rgba(255,255,255,.9);
+}
+
+footer .nav-tabs .nav-link.active {
+  background: rgba(255,255,255,.9);
+  color: #D69035;
+}
+
+/*FOOTER 店家營業資訊內容*/
+.tab-content {
+  padding-top: 1rem; 
+}
+
+
+/*map*/
+.map-box {
+  background: #D69035;
+  padding: 1rem;
+}
+
+.map {
+  display: block;
+  width: 100%;
+  height: 50vh;
+}
+
+/*FOOTER 結束*/
+
+@media (max-width: 575.98px){
+  /*網頁內容 Nav*/
+  main .nav-item {
+    width: 8rem;
+  }
+  main .nav-link {
+    border-top: none;
+    border-right: 2px solid rgba(255, 255, 255, 0.6);
+    border-bottom: none;
+    border-left: 2px solid rgba(255, 255, 255, 0.6);
+    margin-right: -2px;
+  }
+  
+  main .nav-link:hover {
+    border-top: none;
+    border-bottom: none;    
+    border-right: 2px solid #249461;
+    border-left: 2px solid #249461;
+    position: relative;
+    z-index: 2;
+  }
+  
+  main .nav-link.active {
+    color: #FFF;
+    background: #249461;
+    border-top: none;
+    border-bottom: none;
+    border-right: 2px solid #249461;
+    border-left: 2px solid #249461;
+    margin-right: 0;
+  }
+
+  main .nav-link:active {
+    border-top: none;
+    border-bottom: none;
+  }
+}
+
+@media (max-width: 767.98px){
+  /*header navbar*/
+  header .navbar-nav {
+    padding: 0 1rem;
+  }
+  header .nav-link{
+    line-height: 1.5;
+    padding: 0.5rem 0;
+  }
+  
+  /*店家營業資訊*/
+  footer .tab-content {
+    height: 45vh;
+  }
+  
+  /*店家照片*/
+  main .store-photo {
+    background-position: 30% auto;
+    height: 50vh;
+    margin-bottom: 1rem; 
+  }
+}
+@media (min-width: 992px) {
+  .store-photo {
+    background: url("https://pic.pimg.tw/taipeigardenmall/1499334906-1821075545_n.jpg") center center / 100% auto no-repeat;
+  }
+}
