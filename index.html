@@ -39,9 +39,12 @@
 	<button onclick="
 		console.log('ok1');
 		$('#go').attr('src','https://ccyo.github.io/restart/wanshiang/index.html');
-		$('#go')[0].addEventListener('load' , function(event){
+		$('#go').one('load' , function(event){
 			console.log(123);
 			console.log(event.target.contentWindow.document.documentElement.scrollHeight);
+			var h = event.target.contentWindow.document.documentElement.scrollHeight;
+			$('#go').css({height: h + "px"})
+			
 		})">OK</button>
   <iframe id="go" width="100%" height="680" marginwidth="0" scrolling="auto" frameborder="0"></iframe>
   <!--Nav 內容-->
